@@ -1,0 +1,40 @@
+.headersu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.namesu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3.4rem;
+    margin-right: 3.4rem;
+}
+.emailsu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3.4rem;
+    margin-right: 3.4rem;
+}
+.passwordsu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3.4rem;
+    margin-right: 3.4rem;
+}
+.phonesu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3.4rem;
+    margin-right: 3.4rem;
+}
+.signupbtn
+{
+    margin-left: 3.4rem;
+    margin-right: 3.4rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}

@@ -1,0 +1,35 @@
+.headersi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.emailsi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3.4rem;
+    margin-right: 3.4rem;
+}
+.passwordsi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3.4rem;
+    margin-right: 3.4rem;
+}
+.passwordsi a{
+    font-size: smaller;
+    align-self: flex-end;
+}
+.loginbtn
+{
+    margin-left: 3.4rem;
+    margin-right: 3.4rem;
+}
+.loginoptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 10px;
+}

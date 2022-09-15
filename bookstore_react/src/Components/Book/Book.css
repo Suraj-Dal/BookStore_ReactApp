@@ -1,0 +1,17 @@
+.mainhc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    height: 100vh;
+    gap: 25%;
+}
+.optionhc select{
+    width: 10rem;
+    height: 1.5rem;
+    border: px solid #878787;
+    background-color: #ebeaea;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 1.2rem;
+}
