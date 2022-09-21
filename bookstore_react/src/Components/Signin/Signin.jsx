@@ -4,7 +4,7 @@ import { InputLabel } from '@mui/material';
 import Button from '@mui/material/Button';
 import './Signin.css'
 import { signIn } from '../../Services/UserService';
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const emailRegex =
     /^[0-9A-Za-z]+([._+-][0-9A-Za-z]+)*[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?$/;
@@ -65,13 +65,13 @@ function Signin(props) {
         }
         if (emailTest === true && passwordTest === true) {
             let response = await signIn(signinObj);
-           // navigate('/Dashboard')
-           console.log("login successfully")
+            navigate('/Dashboard')
+            console.log("login successfully")
             localStorage.setItem("Token", response?.data?.data)
         }
     };
 
-    const listenToForget = () =>{
+    const listenToForget = () => {
         navigate('/Forget')
     }
 
@@ -103,7 +103,7 @@ function Signin(props) {
                     error={regexObj.passwordBorder}
                     helperText={regexObj.passwordHelper}
                     fullWidth />
-                <a style={{cursor: "pointer"}} onClick={listenToForget}>Forgot Password?</a>
+                <a style={{ cursor: "pointer" }} onClick={listenToForget}>Forgot Password?</a>
             </div>
             <div className='loginbtn'>
                 <Button variant="contained" fullWidth style={{ backgroundColor: "#A03037" }} onClick={submit}>Login</Button>

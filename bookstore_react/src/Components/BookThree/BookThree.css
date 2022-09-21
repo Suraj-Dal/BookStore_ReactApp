@@ -1,0 +1,49 @@
+.bookimgqv {
+    padding: 5px;
+    width: 25px;
+    height: 35px;
+}
+
+.bigimgqv {
+    padding: 15px 25px;
+    width: 180px;
+    height: 230px;
+    border: 1px solid #d6d5d5;
+}
+
+.bookimgqv:hover {
+    border: 2px solid #3371B5;
+}
+
+.boxtwoqv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-left: 5%;
+    width: 40vw;
+}
+
+.ratingqv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.ratingbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 40px;
+    height: 20px;
+    background: #388E3C 0% 0% no-repeat padding-box;
+    border-radius: 1px;
+    opacity: 1;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+}

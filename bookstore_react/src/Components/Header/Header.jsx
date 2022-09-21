@@ -2,10 +2,15 @@ import React from 'react'
 import bookimg from '../../Assets/book.png'
 import './Header.css'
 import SearchIcon from '@mui/icons-material/Search';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import ProfilePopper from '../ProfilePopper/ProfilePopper';
+import { useNavigate } from 'react-router-dom'
 
 function Header() {
+    const navigate = useNavigate()
+    const handleCart = () =>{
+        navigate('/Cart')
+    }
     return (
         <div>
             <div className='headhc'>
@@ -19,10 +24,9 @@ function Header() {
                 </div>
                 <div className='buttonhc'>
                     <div className='profilehc'>
-                        <PersonOutlineIcon fontSize='small' />
-                        <h6 style={{margin: "0", fontWeight: "light"}}>Profile</h6>
+                        <ProfilePopper />
                     </div>
-                    <div className='carthc'>
+                    <div className='carthc' onClick={handleCart}>
                         <ShoppingCartOutlinedIcon fontSize='small'/>
                         <h6 style={{margin: "0", fontWeight: "light"}}>Cart</h6>
                     </div>
